@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap");
+
+@page {
+  size: A3 portrait;
+  width: 297mm;
+  height: 420mm;
+  margin: 0;
+}
+
+@media print {
+  @page {
+    size: A3 portrait;
+    width: 297mm;
+    height: 420mm;
+    margin: 0;
+  }
+}
+
+body {
+  width: 297mm;
+  height: 420mm;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Aleo", serif;
+}
+
+.poster_wrapper {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster {
+  height: 94%;
+  width: 94%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poster_info{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    padding-bottom: 120px;
+
+}
+
+.poster_header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  width: 100px;
+  height: 21px;
+  background-image: url("../icons/logo.svg");
+  background-size: 100px 21px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.corner {
+  position: absolute;
+
+  width: 251px;
+  height: 237px;
+  background-image: url("../icons/corner.svg");
+  background-size: 251px 237px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.qr_code {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+.corner_top-left {
+  top: 0;
+  left: 0;
+}
+
+.corner_top-right {
+  transform: rotateY(180deg);
+  right: 0;
+  top: 0;
+}
+
+.corner_bottom-left {
+  bottom: 0;
+  left: 0;
+  transform: rotateX(180deg);
+}
+
+.corner_bottom-right {
+  bottom: 0;
+  right: 0;
+  width: 251px;
+  height: 237px;
+  background-image: url("../icons/corner_bottom_right.svg");
+  background-size: 251px 237px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  /* position: relative; */
+}
+.poster_footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.astro_user_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.astro_map {
+  height: 600px;
+  width: 600px;
+  /* border: 1px solid black; */
+}
+
+.user_name {
+  padding-top: 20px;
+  /* font-family: "Aleo", serif; */
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+}
+
+.user_info {
+  gap: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user_info > p {
+  /* font-family: "Aleo", serif; */
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: center;
+}
+
+.seraparator_icon {
+  width: 136px;
+  height: 36px;
+  background-image: url("../icons/separator.svg");
+  background-size: 136px 36px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.astro_info_wraper {
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.astro_info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.astro_info-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.astro_info-col-descr {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.col_name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.col_zodiac_sign {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.zodiac_sign {
+  height: 21px;
+  width: 21px;
+  object-fit: contain;
+}
+
+.zodiac {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.6px;
+  text-align: left;
+}
+
+.zodiac_descr {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.astro_info-col-affirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.affirmation_title {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.affirmation_title > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.affirmation_icon {
+  width: 14px;
+  height: 14px;
+  background-image: url("../icons/affirmation_icon.svg");
+  background-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.affirmation_descr {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.astro_elements {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.element_icon {
+  width: 27px;
+  height: 23px;
+  background-size: 27px 23px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../icons/element_icon.svg");
+  padding-bottom: 8px;
+}
+
+.planet_icon {
+  width: 21px;
+  height: 23px;
+  background-size: 21px 32px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../icons/planet_icon.svg");
+  padding-bottom: 8px;
+}
+
+.gemstone_icon {
+  width: 40px;
+  height: 23px;
+  background-size: 40px 32px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../icons/gemstone_icon.svg");
+  padding-bottom: 8px;
+}
+
+.modality_icon {
+  width: 27px;
+  height: 23px;
+  background-size: 27px 23px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../icons/modality_icon.svg");
+  padding-bottom: 8px;
+}
+
+.element_type {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: center;
+}
+
+.element_name {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: center;
+}
+
+.footer_text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.footer_text > p {
+  font-size: 18.3px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+
+.point{
+    padding-bottom: 9px;
+}
